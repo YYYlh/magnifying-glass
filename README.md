@@ -8,6 +8,6 @@ vue放大镜组件
 <div style="width: 300px; height: 200px;">
     <magnifyingGlass :src="require('../assets/images/2.png')" :multiple="3" />
 </div>
-import magnifyingGlass from 'magnifying-glass';
+import magnifyingGlass from 'vue-magnifying-glass';
 ...
 ```
