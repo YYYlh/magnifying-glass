@@ -16,6 +16,7 @@ import magnifyingGlass from 'magnifying-glass';
 ```
 
 import magnifyingGlass from 'magnifying-glass';
+...
 render() {
     const imgUrl = require('./asset/images/2.jpg')
     return (
