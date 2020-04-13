@@ -9,13 +9,13 @@
 <div style="width: 300px; height: 200px;">
     <magnifyingGlass :src="require('../assets/images/2.png')" :multiple="3" />
 </div>
-import magnifyingGlass from 'vue-magnifying-glass';
+import magnifyingGlass from 'magnifying-glass';
 ...
 ```
 ### react
 ```
 
-import magnifyingGlass from 'vue-magnifying-glass';
+import magnifyingGlass from 'magnifying-glass';
 render() {
     retutn (
         <div style="width: 300px; height: 200px;">
