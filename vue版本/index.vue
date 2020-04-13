@@ -103,17 +103,17 @@ export default {
       // 放大镜的大小
       const glassSize = this.glassWH
       const halfSize = glassSize / 2
+      const maxX = this.contentData.width - glassSize // 临界值
+      const maxY = this.contentData.height - glassSize // 临界值
       contentDom.addEventListener('mousemove', (e) => {
         let x = e.offsetX - halfSize
         let y = e.offsetY - halfSize
         if (x < 0) {
           x = 0
         }
-        const maxX = this.contentData.width - glassSize // 临界值
         if (x > maxX) {
           x = maxX
         }
-        const maxY = this.contentData.height - glassSize // 临界值
         if (y > maxY) {
           y = maxY
         }
@@ -149,7 +149,7 @@ export default {
 }
 .content .img {
   position: absolute; /* 防止放大镜dom触发事件 */
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: color-burn;
 }
 .content .magnifying-view {
   position: absolute;

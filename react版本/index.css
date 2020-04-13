@@ -1,0 +1,27 @@
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.content .glass {
+  position: absolute;
+  display: none;
+  background: #fd79a7a1;
+}
+.content .img {
+  position: absolute; /* 防止放大镜dom触发事件 */
+  mix-blend-mode: color-burn;
+}
+.content .magnifying-view {
+  position: absolute;
+  overflow: hidden;
+}
+.magnifying-view .magnifying-content {
+  object-fit: contain;
+}
